@@ -9,7 +9,7 @@ public class Square : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        BuyMenu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -20,6 +20,11 @@ public class Square : MonoBehaviour
 
     private void OnMouseDown()
     {
-        
+        BuyMenu.SetActive(true);
+    }
+
+    private void OnMouseExit()
+    {
+        BuyMenu.SetActive(false);
     }
 }
